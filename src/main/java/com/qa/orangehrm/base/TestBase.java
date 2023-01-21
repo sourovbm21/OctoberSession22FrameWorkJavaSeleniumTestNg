@@ -20,7 +20,7 @@ public class TestBase {
    public  FileInputStream fis;
 
 
-   public void driver_init() throws IOException {
+   public WebDriver driver_init() throws IOException {
 
         prop = new Properties();
         fis = new FileInputStream("/Users/tohidur/IdeaProjects/OctoberSession22Framwork/src/main/java/con/qa/orangehrm/config/config.properties");
@@ -49,6 +49,7 @@ public class TestBase {
        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(3));
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
        driver.get(prop.getProperty("Url"));
+       return driver;
 
 
 
