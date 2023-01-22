@@ -1,4 +1,5 @@
 import com.qa.orangehrm.base.TestBase;
+import com.qa.orangehrm.pages.DeshboardPage;
 import com.qa.orangehrm.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -33,6 +34,11 @@ public class LoginPageTest extends TestBase {
         loginPage.userName.sendKeys(prop.getProperty("UserName"));
         loginPage.passWord.sendKeys(prop.getProperty("PassWord"));
         loginPage.loginBtn.click();
+        DeshboardPage deshboardPage = new DeshboardPage(driver);
+       // deshboardPage.successLoginMsg.isDisplayed();
+        Assert.assertTrue(deshboardPage.successLoginMsg.isDisplayed());
+
+
     }
 
     @Test
