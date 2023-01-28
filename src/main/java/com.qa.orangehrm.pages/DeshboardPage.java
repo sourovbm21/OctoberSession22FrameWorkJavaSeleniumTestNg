@@ -13,6 +13,8 @@ public class DeshboardPage {
    public WebElement successLoginMsg;
     @FindBy(xpath = "//p[text()='My Actions']")
     public WebElement myActionsTag;
+    @FindBy(xpath = "//span[text()='Admin']")
+    public WebElement adminBtn;
 
 
 
