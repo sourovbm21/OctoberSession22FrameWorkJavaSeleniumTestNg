@@ -24,15 +24,16 @@ public class LoginPage {
         PageFactory.initElements(driver,this);
     }
 
-    public void doLogin(String uName,String pwd ){
+    public DeshboardPage doLogin(String uName, String pwd ){
         userName.clear();
         userName.sendKeys(uName);
         passWord.clear();
         passWord.sendKeys(pwd);
         loginBtn.click();
+        return new DeshboardPage(driver);
     }
 
-
+//DeshboardPage deshboardPage = new DeshboardPage();
 
 
 
