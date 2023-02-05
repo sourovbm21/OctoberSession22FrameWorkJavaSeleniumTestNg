@@ -28,7 +28,9 @@ public class AdminPageTest extends TestBase {
 
     @Test
     public void test01(){
-
+        AdminPage adminPage = new AdminPage(driver);
+        adminPage.userNameEditBox("Sahana");
+        adminPage.employeeNameEditBox("Microsoft");
 
     }
 

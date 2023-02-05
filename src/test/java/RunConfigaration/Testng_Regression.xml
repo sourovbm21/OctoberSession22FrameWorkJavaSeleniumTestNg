@@ -4,8 +4,6 @@
   <test thread-count="2" name="methods">
     <classes>
       <class name="AdminPageTest"/>
-      <class name="DeshbordPageTest"></class>
-      <class name="LoginPageTest"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

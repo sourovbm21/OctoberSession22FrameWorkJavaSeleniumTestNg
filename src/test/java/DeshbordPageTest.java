@@ -7,12 +7,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-import java.nio.file.Watchable;
+
 
 public class DeshbordPageTest extends TestBase {
 
 
     public WebDriver driver;
+
 
     @BeforeMethod
     public void setUp() throws IOException {
@@ -24,6 +25,7 @@ public class DeshbordPageTest extends TestBase {
 //        loginPage.passWord.sendKeys(prop.getProperty("PassWord"));
 //        loginPage.loginBtn.click();
         //loginPage.doLogin("Admin","adimn123");
+       //deshboardPage = new DeshboardPage(driver);
         loginPage.doLogin(prop.getProperty("UserName"),prop.getProperty("PassWord"));
 
     }
@@ -36,6 +38,12 @@ public class DeshbordPageTest extends TestBase {
         String actualAccountTag = deshboardPage.myActionsTag.getText();
         System.out.println(actualAccountTag);
         Assert.assertEquals(actualAccountTag, "My Actions");
+    }
+
+
+    @Test
+    public  void tearDown(){
+        driver.quit();
     }
 
 

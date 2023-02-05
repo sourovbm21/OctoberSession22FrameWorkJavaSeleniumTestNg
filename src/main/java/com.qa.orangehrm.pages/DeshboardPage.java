@@ -10,7 +10,7 @@ public class DeshboardPage {
    private WebDriver driver;
 
     @FindBy(xpath = "//p[text()='Paul Collings']")
-   public WebElement successLoginMsg;
+    public WebElement successLoginMsg;
     @FindBy(xpath = "//p[text()='My Actions']")
     public WebElement myActionsTag;
     @FindBy(xpath = "//span[text()='Admin']")
