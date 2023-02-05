@@ -34,6 +34,7 @@ public class AdminPage {
     }
     public void employeeNameEditBox(String name){
         commonUtils.doSendKeys(employeeName,name);
+
     }
 
 
