@@ -23,6 +23,10 @@ public class CommonUtils {
         driver.findElement(locator).clear();
         driver.findElement(locator).sendKeys(s);
     }
+    public void doSendKeysUsingFindBy(WebElement element, String s){
+        element.clear();
+        element.sendKeys(s);
+    }
     public void moveToElement(By locator){
        WebElement element =  driver.findElement(locator);
        js.executeScript("arguments[0].scrollIntoView();",element);

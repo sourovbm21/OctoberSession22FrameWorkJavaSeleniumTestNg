@@ -1,5 +1,6 @@
 package com.qa.orangehrm.pages;
 
+import com.qa.orangehrm.utils.CommonUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

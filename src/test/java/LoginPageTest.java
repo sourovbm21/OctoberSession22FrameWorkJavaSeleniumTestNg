@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import java.io.IOException;
 
@@ -38,6 +39,19 @@ public class LoginPageTest extends TestBase {
        // deshboardPage.successLoginMsg.isDisplayed();
         Assert.assertTrue(deshboardPage.successLoginMsg.isDisplayed());
 
+//        SoftAssert sf = new SoftAssert();
+//        sf.assertTrue(deshboardPage.successLoginMsg.isDisplayed());
+//
+//        LoginPage loginPage = new LoginPage(driver);
+//        loginPage.userName.sendKeys(prop.getProperty("UserName"));
+//        sf.assertTrue(deshboardPage.successLoginMsg.isDisplayed());
+//        loginPage.passWord.sendKeys(prop.getProperty("PassWord"));
+//        sf.assertTrue(deshboardPage.successLoginMsg.isDisplayed());
+//        loginPage.loginBtn.click();
+//        sf.assertTrue(deshboardPage.successLoginMsg.isDisplayed());
+//        sf.assertTrue(deshboardPage.successLoginMsg.isDisplayed());
+//        DeshboardPage deshboardPage = new DeshboardPage(driver);
+//        sf.assertAll();;
 
     }
 
