@@ -54,9 +54,6 @@ public class AdminPageTest extends TestBase {
         Thread.sleep(2000l);
         adminPage.saveButton.click();
     }
-
-
-
     @Test
     public void test01(){
         AdminPage adminPage = new AdminPage(driver);
