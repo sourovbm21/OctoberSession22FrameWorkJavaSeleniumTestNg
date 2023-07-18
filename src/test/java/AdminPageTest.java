@@ -68,9 +68,9 @@ public class AdminPageTest extends TestBase {
     @AfterMethod
     public void tearDown() {
         try {
-
-        } catch () {
-            throw new RuntimeException();
+            Thread.sleep(3000l);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
         //driver.quit();
     }
