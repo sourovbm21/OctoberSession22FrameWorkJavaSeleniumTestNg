@@ -54,11 +54,15 @@ public class AdminPageTest extends TestBase {
         Thread.sleep(2000l);
         adminPage.saveButton.click();
     }
-
-
-
     @Test
-    public void test01(){
+    public void test02(){
+        AdminPage adminPage = new AdminPage(driver);
+        adminPage.userNameEditBox("Sahana");
+        adminPage.employeeNameEditBox("Microsoft");
+
+    }
+    @Test
+    public void test03(){
         AdminPage adminPage = new AdminPage(driver);
         adminPage.userNameEditBox("Sahana");
         adminPage.employeeNameEditBox("Microsoft");
