@@ -2,6 +2,7 @@ package com.qa.orangehrm.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -34,7 +35,11 @@ public class TestBase {
        String browser_Name = prop.getProperty("BrowserName");
 
        if (browser_Name.equalsIgnoreCase("Chrome")){
-            driver = new ChromeDriver();
+           ///Users/tohidur/Downloads/chromedriver-mac-x64
+           System.setProperty("webdriver.chrome.driver","/Users/tohidur/Downloads/chromedriver-mac-x64/chromedriver");
+           ChromeOptions co = new ChromeOptions()   ;
+           co.setBinary("/Users/tohidur/Downloads/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing");
+            driver = new ChromeDriver(co);
        } else if (browser_Name.equalsIgnoreCase("firefox")) {
             driver = new FirefoxDriver();
        } else if (browser_Name.equalsIgnoreCase("Edge")) {

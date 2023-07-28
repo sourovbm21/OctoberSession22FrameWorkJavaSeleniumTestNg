@@ -69,7 +69,7 @@ public class AdminPageTest extends TestBase {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-        //driver.quit();
+        driver.quit();
     }
 
 
